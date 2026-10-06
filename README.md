@@ -12,6 +12,6 @@ Run `python3 -m http.server 8080` in this directory and open `http://localhost:8
 
 ## Publishing
 
-The site is intended for GitHub Pages from `main` / root, with Cloudflare DNS for `focus.cybrpulse.com`, matching the existing Practice Studio setup. GitHub Pages and Cloudflare DNS must both be configured; a Git push alone does not connect the domain.
+The site deploys through GitHub Pages from `main` / root. Cloudflare hosts the DNS-only `focus.cybrpulse.com` CNAME pointing to `tom-gorup.github.io`, matching the existing Practice Studio setup. GitHub Pages handles the site's HTTPS certificate.
 
 Contact mail links use the already configured `support@cybrpulse.com` and `privacy@cybrpulse.com` routing addresses.
