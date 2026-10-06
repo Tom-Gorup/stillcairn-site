@@ -1,10 +1,10 @@
-# FocusKey website
+# Stillcairn website
 
-Static public website for the FocusKey iPhone app. The app source is kept in a separate repository.
+Static public website for the Stillcairn iPhone app. The app source is kept in a separate repository.
 
 ## Positioning
 
-**Your card. Your boundaries. Your time.** FocusKey uses standard writable NFC cards, local pairings and recorded session insights. The site describes a private-testing product and has no checkout, testimonials, user-count claims, analytics scripts or fake email form.
+**Your card. Your boundaries. Your time.** Stillcairn uses standard writable NFC cards, local pairings and recorded session insights. The site describes a private-testing product and has no checkout, testimonials, user-count claims, analytics scripts or fake email form.
 
 ## Local preview
 
