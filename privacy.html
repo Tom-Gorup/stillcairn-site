@@ -1,12 +1,48 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#091725"><meta name="description" content="How Stillcairn handles app data and website visits."><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><title>Privacy · Stillcairn</title></head>
-<body class="legal-body"><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell nav-row"><a class="brand" href="./"><svg class="brand-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="12" fill="#142e45"/><ellipse cx="20" cy="27" rx="12" ry="3.5" fill="#418fc3"/><ellipse cx="20" cy="19.5" rx="9" ry="3.2" fill="#84ccdc"/><ellipse cx="20" cy="12.5" rx="6" ry="3" fill="#d5fa74"/></svg><span>Stillcairn</span></a><nav class="main-nav" aria-label="Main navigation"><a href="./#how-it-works">How it works</a><a href="./#why-stillcairn">Why Stillcairn</a><a href="support.html">Support</a></nav><a class="nav-cta" href="mailto:support@cybrpulse.com?subject=Stillcairn%20early%20access">Request early access <span aria-hidden="true">↗</span></a></div></header>
-<main id="main" class="legal-wrap"><a class="back-link" href="./">← Back to Stillcairn</a><p class="kicker">INFORMATION / PRIVACY</p><h1>Privacy policy.</h1><p class="legal-intro">Stillcairn is designed to work locally on your iPhone. This policy describes the app in private testing and this website. Effective October 5, 2026.</p>
-<h2>Stillcairn app</h2><p>The app has no account, cloud backend, ads, analytics SDK, or tracking. Profiles, selected Screen Time tokens, session history, paired-key digests, and diagnostics stay in local app storage on your iPhone. The Home Screen widget reads a limited local status snapshot through the app’s shared App Group; it does not receive the card value or Screen Time selection tokens.</p>
-<h2>Screen Time and NFC</h2><p>Stillcairn asks iOS for Family Controls authorization to let you select apps, categories, and supported websites and apply restrictions during a focus session. You can revoke this authorization in iOS Settings. The app writes a random value to a compatible NFC card and stores a SHA-256 digest for local matching. The raw card value is not included in diagnostics. A passive card can be copied by someone who can read it; Stillcairn does not claim clone resistance.</p>
-<h2>Session insights</h2><p>Insights calculate time within recorded Stillcairn sessions. They do not measure your actual app use, claim to reduce screen time, or estimate time saved. Completed records remain on your device under the device’s normal backup settings.</p>
-<h2>Lost-key recovery</h2><p>A confirmed recovery clears Stillcairn’s restrictions on that phone, revokes its locally paired keys, and requires a fresh card write and verification before another focus session. It does not erase the contents of a lost card or revoke a pairing stored on a different phone.</p>
-<h2>This website</h2><p>This static website does not set marketing cookies, run analytics scripts, or collect information through a form. Its hosting and DNS providers may process standard connection information such as IP address and request logs to deliver the site. If you email us, your message and address are handled by the email providers needed to receive and answer it.</p>
-<h2>Contact</h2><p>For privacy questions, email <a href="mailto:privacy@cybrpulse.com?subject=Stillcairn%20privacy">privacy@cybrpulse.com</a>. For product help, email <a href="mailto:support@cybrpulse.com?subject=Stillcairn%20support">support@cybrpulse.com</a>.</p>
-<div class="legal-note"><p>Stillcairn is currently in private testing. This policy will be reviewed again before public release.</p></div></main>
-<footer class="site-footer"><div class="shell footer-bottom"><span>Stillcairn · 2026</span><span><a href="./">Home</a> · <a href="support.html">Support</a></span></div></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091725">
+  <meta name="description" content="How Stillcairn handles app data, website visits, and support messages.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Privacy · Stillcairn</title>
+</head>
+<body class="legal-body">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="brand" href="./"><svg class="brand-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="12" fill="#142e45"/><ellipse cx="20" cy="27" rx="12" ry="3.5" fill="#418fc3"/><ellipse cx="20" cy="19.5" rx="9" ry="3.2" fill="#84ccdc"/><ellipse cx="20" cy="12.5" rx="6" ry="3" fill="#d5fa74"/></svg><span>Stillcairn</span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="./#how-it-works">How it works</a><a href="./#why-stillcairn">Why Stillcairn</a><a href="support.html">Support</a></nav>
+      <a class="nav-cta" href="mailto:support@cybrpulse.com?subject=Stillcairn%20support">Contact support <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main" class="legal-wrap">
+    <a class="back-link" href="./">← Back to Stillcairn</a>
+    <p class="kicker">INFORMATION / PRIVACY</p>
+    <h1>Privacy policy.</h1>
+    <p class="legal-intro">Stillcairn is a personal iPhone app developed by Thomas Gorup and is being prepared for public release. This policy describes the current app and this separate website. Effective October 10, 2026. A CybrPulse subdomain provides the pages and routed contact addresses; it does not establish an Apple App Store seller.</p>
+
+    <h2>App storage</h2>
+    <p>Stillcairn does not require an account and has no ads, analytics SDK, tracking, or developer-operated cloud backend. Profiles and Screen Time selection tokens, paired-card digests, schedules, completed session records, and local diagnostics stay in app storage on the iPhone. A Home Screen widget reads a limited status snapshot through a shared App Group. It does not receive the card value or Screen Time selection tokens. The app does not send these records to a developer-operated service.</p>
+
+    <h2>Screen Time, parent controls, and NFC</h2>
+    <p>Stillcairn requests Apple's Family Controls authorization when you choose apps, categories, or supported websites to restrict during focus. iOS manages that permission and applies supported restrictions. Optional parent controls can request child authorization through Apple's Family Sharing flow on a child's iPhone. A parent PIN is not kept as readable text: the app stores a salted verifier in that device's Keychain and keeps local retry and lockout state. The app does not provide remote parent management. Family Controls availability and behavior depend on Apple's permissions and the device setup.</p>
+    <p>For a compatible NFC card, the app writes a random value and keeps a SHA-256 digest locally for matching. The raw card value is not included in diagnostics. A passive card can be copied by someone able to read it; Stillcairn does not claim clone resistance.</p>
+
+    <h2>Insights and recovery</h2>
+    <p>Insights calculate time in recorded Stillcairn sessions. They do not measure your actual use of other apps or estimate time saved. A confirmed lost-key recovery clears Stillcairn's restrictions and paired keys on that phone, then requires a fresh card write and verification. It does not erase a lost card or revoke a pairing on another phone. In parent mode, parent access is required for the appropriate recovery route.</p>
+
+    <h2>Retention and iPhone services</h2>
+    <p>Local records remain until you remove them or delete the app and its data. Offloading an app can retain data. Depending on iPhone settings, Apple's device backups may include local app data; backups and system diagnostics are managed by Apple under its own policies. Stillcairn does not add its own cloud backup or diagnostic upload.</p>
+
+    <h2>This website and email</h2>
+    <p>This static website has no form, marketing cookies, or analytics script. GitHub Pages and the DNS provider may process ordinary connection information, including IP addresses and request logs, to deliver it. If you email support or privacy, email routing and mailbox providers handle the address and message you choose to send so Thomas can reply. Please do not send NFC card contents, PINs, or private Screen Time selections.</p>
+
+    <h2>Contact and updates</h2>
+    <p>For privacy questions, email <a href="mailto:privacy@cybrpulse.com?subject=Stillcairn%20privacy">privacy@cybrpulse.com</a>. For product help, email <a href="mailto:support@cybrpulse.com?subject=Stillcairn%20support">support@cybrpulse.com</a>. This policy will be updated if the app's data practices change.</p>
+  </main>
+  <footer class="site-footer"><div class="shell footer-bottom"><span>Stillcairn · 2026</span><span><a href="./">Home</a> · <a href="support.html">Support</a></span></div></footer>
+</body>
+</html>

@@ -1,12 +1,49 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#091725"><meta name="description" content="Stillcairn setup, NFC card, Screen Time, and recovery help."><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><title>Support · Stillcairn</title></head>
-<body class="legal-body"><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell nav-row"><a class="brand" href="./"><svg class="brand-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="12" fill="#142e45"/><ellipse cx="20" cy="27" rx="12" ry="3.5" fill="#418fc3"/><ellipse cx="20" cy="19.5" rx="9" ry="3.2" fill="#84ccdc"/><ellipse cx="20" cy="12.5" rx="6" ry="3" fill="#d5fa74"/></svg><span>Stillcairn</span></a><nav class="main-nav" aria-label="Main navigation"><a href="./#how-it-works">How it works</a><a href="./#questions">FAQ</a><a href="privacy.html">Privacy</a></nav><a class="nav-cta" href="mailto:support@cybrpulse.com?subject=Stillcairn%20support">Contact support <span aria-hidden="true">↗</span></a></div></header>
-<main id="main" class="legal-wrap"><a class="back-link" href="./">← Back to Stillcairn</a><p class="kicker">INFORMATION / SUPPORT</p><h1>Here to help.</h1><p class="legal-intro">Stillcairn is in private iPhone testing. Tell us what happened and we’ll help you get back to your intended setup.</p>
-<div class="legal-note"><p>Email <a href="mailto:support@cybrpulse.com?subject=Stillcairn%20support">support@cybrpulse.com</a> with your iPhone model, iOS version, app build, and what you saw. Please do not send NFC card contents or private Screen Time selections.</p></div>
-<h2>Screen Time access</h2><p>During setup, allow the Family Controls request from iOS and choose the apps, categories, or supported websites for a profile. If access is off later, use the request button in Stillcairn Settings. iOS Settings remains the place to manage this permission.</p>
-<h2>Pairing a card</h2><p>Use a writable NTAG213, NTAG215, or NTAG216 card. Hold the top of your iPhone near the card during the write scan, then present that same card for the confirmation scan. A card near metal may need an on-metal or ferrite-backed design. If writing may have succeeded before an error, choose “Already written? Verify this key” to scan it without overwriting.</p>
-<h2>A scan does not work</h2><p>Move the top edge of the iPhone slowly across the card, remove a thick case if needed, and try again. If the card is read-only, unsupported, or too small, use another compatible writable card. A different or removed card cannot end a session.</p>
-<h2>Ending focus or losing a card</h2><p>Open Stillcairn and scan any key paired with that iPhone to end manual focus or an active schedule early. If every key is lost, use the confirmed “Lost your key?” recovery in Settings. It clears Stillcairn’s restrictions on that phone and requires a freshly written and verified key for future sessions.</p>
-<h2>Availability</h2><p>Stillcairn is currently in private iPhone testing. Public availability and pricing have not been announced. To ask about early access, <a href="mailto:support@cybrpulse.com?subject=Stillcairn%20early%20access">send us an email</a>.</p>
-<p>Read the <a href="privacy.html">privacy policy</a>.</p></main>
-<footer class="site-footer"><div class="shell footer-bottom"><span>Stillcairn · 2026</span><span><a href="./">Home</a> · <a href="privacy.html">Privacy</a></span></div></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091725">
+  <meta name="description" content="Stillcairn setup, NFC card, Screen Time, parent controls, and recovery help.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Support · Stillcairn</title>
+</head>
+<body class="legal-body">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="brand" href="./"><svg class="brand-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="12" fill="#142e45"/><ellipse cx="20" cy="27" rx="12" ry="3.5" fill="#418fc3"/><ellipse cx="20" cy="19.5" rx="9" ry="3.2" fill="#84ccdc"/><ellipse cx="20" cy="12.5" rx="6" ry="3" fill="#d5fa74"/></svg><span>Stillcairn</span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="./#how-it-works">How it works</a><a href="./#questions">FAQ</a><a href="privacy.html">Privacy</a></nav>
+      <a class="nav-cta" href="mailto:support@cybrpulse.com?subject=Stillcairn%20support">Contact support <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main" class="legal-wrap">
+    <a class="back-link" href="./">← Back to Stillcairn</a>
+    <p class="kicker">INFORMATION / SUPPORT</p>
+    <h1>Here to help.</h1>
+    <p class="legal-intro">Stillcairn is being prepared for public iPhone release. These instructions describe its current setup and recovery flows; actual Screen Time behavior depends on Apple's permissions and the device.</p>
+    <div class="legal-note"><p>Email <a href="mailto:support@cybrpulse.com?subject=Stillcairn%20support">support@cybrpulse.com</a> with your iPhone model, iOS version, app build, profile mode, and what you saw. Thomas Gorup handles app support through this routed address. Do not send NFC card contents, parent PINs, or private Screen Time selections.</p></div>
+
+    <h2>Screen Time access</h2>
+    <p>During setup, allow the Family Controls request from iOS and choose the apps, categories, or supported websites for a profile. If access is off later, use the request button in Stillcairn Settings and check iOS Settings. Some system apps and websites may not be covered by Apple's restrictions.</p>
+
+    <h2>Parent controls</h2>
+    <p>Parent controls are configured on a child's iPhone with a paired card, an eight-digit parent PIN, and Apple's child authorization through Family Sharing. A parent must unlock controls to change the protected setup or use its recovery route. If child authorization is unavailable, check the Family Sharing and Screen Time setup and contact support with the displayed error; do not send the PIN.</p>
+
+    <h2>Pairing a card</h2>
+    <p>Use a writable NTAG213, NTAG215, or NTAG216 card. Hold the top of the iPhone near the card during the write scan, then present that same card for the confirmation scan. A card near metal may need an on-metal or ferrite-backed design. If writing may have succeeded before an error, choose “Already written? Verify this key” to check it without overwriting.</p>
+
+    <h2>A scan does not work</h2>
+    <p>Move the top edge of the iPhone slowly across the card, remove a thick case if needed, and try again. If the card is read-only, unsupported, or too small, use another compatible writable card. A different or removed card cannot end a session.</p>
+
+    <h2>Ending focus or losing a card</h2>
+    <p>Scan any key paired with that iPhone to end manual focus or an active schedule early. If every key is lost, use the recovery route shown in Settings for your mode. In parent mode, the parent must unlock access first. Recovery clears Stillcairn's restrictions on that phone and requires a newly written and verified key for future sessions. It does not erase a physical card or another phone's pairing.</p>
+
+    <h2>Availability</h2>
+    <p>Public availability and pricing have not been announced. For updates, <a href="mailto:support@cybrpulse.com?subject=Stillcairn%20availability">contact support</a>.</p>
+    <p>Read the <a href="privacy.html">privacy policy</a> for app, website, and support email data practices.</p>
+  </main>
+  <footer class="site-footer"><div class="shell footer-bottom"><span>Stillcairn · 2026</span><span><a href="./">Home</a> · <a href="privacy.html">Privacy</a></span></div></footer>
+</body>
+</html>
